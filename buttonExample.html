@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Functions need to be in scripts -->
+<script>
+	function changeState(){ 
+	if (x==0){
+		document.getElementById("demo").innerHTML="On state";
+	}else{
+		document.getElementById("demo").innerHTML="Off state";
+	}
+	x=(x+1)%2;
+}
+</script>
+
+<!-- script tag is required around variable declerations -->
+<script>
+var x=0;
+</script>
+</head>
+
+
+<body>
+<h2>JS Button example</h2>
+<p id="demo">Off state </p>
+
+<button type="button"
+onclick="changeState()"> Change state </button>
+</body>
+</html>
