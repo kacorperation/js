@@ -1,0 +1,36 @@
+<!-- There are four ways to display data --> 
+<!-- Each will be shown below -->
+<!DOCTYPE html>
+<html>
+
+
+<body>
+
+
+<h1> Using innerHTML</h1>
+<p id="demo">
+<script>
+document.getElementById("demo").innerHTML=
+	5+6;
+</script>
+
+<h2>Using document.write()</h2>
+<p>Note that using document.write() will erase
+all of the existing HTML.Use get element by id stuff</p>
+<button onclick="document.write(5 + 6)">Try it</button>
+
+
+<h3>Using window.alert</h3>
+<p>Test</p>
+<button onclick="window.alert(5 + 6)">Try it</button>
+
+
+<h4>console.log()</h4>
+<p>Click F12, then click "console" in the debugger</p>
+<script>
+console.log(5 + 6);
+</script>
+
+
+</body>
+</html>
